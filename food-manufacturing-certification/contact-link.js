@@ -3,7 +3,7 @@
  * 링크는 기본적으로 같은 탭에서 열리므로(target 미사용), 브라우저 뒤로가기로 이 랜딩으로 돌아올 수 있습니다.
  */
 (function () {
-  var MAIN_CONTACT_URL = "https://www.example.com/contact";
+  var MAIN_CONTACT_URL = "https://bluedirectors.vercel.app/#/contact";
 
   function apply() {
     document.querySelectorAll("a[data-main-contact]").forEach(function (a) {
