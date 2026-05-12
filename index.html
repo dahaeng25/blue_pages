@@ -7,7 +7,7 @@
       name="description"
       content="주식회사 청사디렉터스 — 인증·인허가·법인 설립·디지털 구축을 하나의 로드맵으로. 업무 영역별 안내 포털."
     />
-    <title>주식회사 청사디렉터스 | CHUNG·SA DIRECTORS — 업무 포털</title>
+    <title>주식회사 청사디렉터스 | CHUNGSA DIRECTORS — 업무 포털</title>
     <link rel="stylesheet" href="./survey-styles.css" />
     <link rel="stylesheet" href="./landing.css" />
   </head>
@@ -15,8 +15,21 @@
     <div class="site-header-wrap">
       <div class="container container--header">
         <nav class="landing-nav" aria-label="상단 안내">
-          <a class="landing-brand" href="./index.html">청사 디렉터스</a>
-          <div class="landing-nav-links">
+          <a class="landing-brand" href="./index.html">
+            <img
+              class="nav-logo"
+              src="https://bluedirectors.vercel.app/cs_logo.png"
+              alt=""
+              width="44"
+              height="44"
+              decoding="async"
+            />
+            <span>청사디렉터스</span>
+          </a>
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-controls="nav-panel-main" />
+          <label for="nav-toggle" class="nav-burger">메뉴</label>
+          <div class="landing-nav-links" id="nav-panel-main">
+            <a href="https://bluedirectors.vercel.app/" target="_blank" rel="noopener noreferrer">공식 홈</a>
             <a href="#intro">회사 소개</a>
             <a href="#deliver">역량</a>
             <a href="#cases">진행사례</a>
@@ -28,21 +41,35 @@
         </nav>
 
         <header class="hero-portal section-anchor" id="top">
-          <p class="hero-kicker">주식회사 청사 디렉터스</p>
-          <div class="hero-brand-row">
-            <span class="hero-hash" aria-hidden="true">#</span>
-            <p class="hero-brand-en">CHUNG·SA DIRECTORS</p>
-          </div>
-          <h1 class="hero-tagline hero-tagline--home">
-            복잡하고 어려운 행정·인허가를 <span class="hero-accent">명쾌하게</span> 풀어 드립니다.
-          </h1>
-          <p class="lede lede--hero">
-            인증, 인허가, 법인 설립, 디지털 구축까지 하나의 로드맵으로 연결합니다. 아래에서 관심 영역을 선택해 세부
-            안내로 이동할 수 있습니다.
-          </p>
-          <div class="hero-actions">
-            <a class="btn-hero-primary" data-main-contact href="#">프리미엄 상담 문의</a>
-            <a class="btn-hero-ghost" href="#portal">업무 포털 보기</a>
+          <div class="hero-layout">
+            <div class="hero-copy">
+              <p class="hero-kicker">주식회사 청사디렉터스</p>
+              <div class="hero-brand-row">
+                <span class="hero-hash" aria-hidden="true">#</span>
+                <p class="hero-brand-en">CHUNGSA DIRECTORS</p>
+              </div>
+              <h1 class="hero-tagline hero-tagline--home">
+                복잡하고 어려운 행정·인허가를 <span class="hero-accent">명쾌하게</span> 풀어 드립니다.
+              </h1>
+              <p class="lede lede--hero">
+                인증, 인허가, 법인 설립, 디지털 구축까지 하나의 로드맵으로 연결합니다. 아래에서 관심 영역을 선택해 세부
+                안내로 이동할 수 있습니다.
+              </p>
+              <div class="hero-actions">
+                <a class="btn-hero-primary" data-main-contact href="#">프리미엄 상담 문의</a>
+                <a class="btn-hero-ghost" href="#portal">업무 포털 보기</a>
+              </div>
+            </div>
+            <div class="hero-visual">
+              <img
+                class="hero-photo"
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=85"
+                alt="비즈니스 팀 협업"
+                width="1600"
+                height="1067"
+                decoding="async"
+              />
+            </div>
           </div>
         </header>
       </div>
@@ -202,6 +229,21 @@
             <p>필요 평가·서류·점검 대비를 체계화해 인증 취득과 사후 유지를 동시에 지원합니다.</p>
             <span class="hub-go">페이지 열기 →</span>
           </a>
+          <a class="hub-card" href="./business-consulting/index.html">
+            <h3>경영·밸류업 컨설팅</h3>
+            <p>기업인증·재무·노무·성장 전략을 실무 관점에서 진단하고 실행 가능한 로드맵으로 정리합니다.</p>
+            <span class="hub-go">페이지 열기 →</span>
+          </a>
+          <a class="hub-card" href="./it-solutions/index.html">
+            <h3>프로그래밍·IT 솔루션</h3>
+            <p>업무 자동화, 인트라넷, 맞춤 웹·앱 등 운영에 맞는 디지털 환경을 설계·구축합니다.</p>
+            <span class="hub-go">페이지 열기 →</span>
+          </a>
+          <a class="hub-card" href="./marketing-media/index.html">
+            <h3>마케팅·미디어 기획</h3>
+            <p>브랜드 메시지와 콘텐츠, 채널 전략을 통합해 인지도와 문의 전환을 높입니다.</p>
+            <span class="hub-go">페이지 열기 →</span>
+          </a>
         </div>
       </section>
 
@@ -217,21 +259,54 @@
 
       <section class="card section-anchor" id="legal">
         <p class="section-eyebrow">Legal</p>
-        <h2 class="section-headline">법인 정보</h2>
-        <p class="section-lede">청사 디렉터스 메인 사이트와 동일한 표기 기준입니다. 실제 등기·사업자 정보로 교체해 주세요.</p>
+        <h2 class="section-headline">법인·연락처 정보</h2>
+        <p class="section-lede">청사디렉터스 공식 홈페이지에 안내된 연락처·주소와 동일합니다.</p>
         <div class="legal-block">
-          <p><strong>상호</strong> 청사 디렉터스</p>
-          <p><strong>대표자</strong> 〔대표자명〕</p>
-          <p><strong>사업자등록번호</strong> 000-00-00000</p>
-          <p><strong>주소</strong> 〔본사 주소〕</p>
-          <p><strong>대표 전화</strong> 000-0000-0000</p>
+          <p><strong>상호</strong> 주식회사 청사디렉터스</p>
+          <p><strong>브랜드</strong> CHUNGSA DIRECTORS</p>
+          <p><strong>주소</strong> 서울특별시 중구 퇴계로 58, B01-1호 (필동)</p>
+          <p><strong>전화</strong> <a href="tel:1555-4561">1555-4561</a></p>
+          <p><strong>이메일</strong> <a href="mailto:csdir0414@naver.com">csdir0414@naver.com</a></p>
+          <p>
+            <strong>카카오톡</strong>
+            <a href="http://pf.kakao.com/_VrajX/chat" target="_blank" rel="noopener noreferrer">채널 바로가기</a>
+          </p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer site-footer--dark">
       <div class="container container--footer">
-        <p>© 청사 디렉터스 · 업무 안내 포털</p>
+        <div class="footer-grid">
+          <div class="footer-col footer-col--brand">
+            <img
+              class="footer-logo"
+              src="https://bluedirectors.vercel.app/cs_logo.png"
+              alt="CHUNGSA DIRECTORS"
+              width="180"
+              height="60"
+              decoding="async"
+            />
+            <p class="footer-company">주식회사 청사디렉터스</p>
+            <p class="footer-en">CHUNGSA DIRECTORS</p>
+          </div>
+          <div class="footer-col">
+            <p class="footer-heading">고객센터</p>
+            <p><a href="tel:1555-4561">1555-4561</a></p>
+            <p><a href="mailto:csdir0414@naver.com">csdir0414@naver.com</a></p>
+            <p>
+              <a href="http://pf.kakao.com/_VrajX/chat" target="_blank" rel="noopener noreferrer">카카오톡 채널</a>
+            </p>
+          </div>
+          <div class="footer-col">
+            <p class="footer-heading">오시는 길</p>
+            <p class="footer-address">서울특별시 중구 퇴계로 58, B01-1호 (필동)</p>
+            <p>
+              <a href="https://bluedirectors.vercel.app/" target="_blank" rel="noopener noreferrer">공식 홈페이지</a>
+            </p>
+          </div>
+        </div>
+        <p class="footer-copy">© 주식회사 청사디렉터스 · CHUNGSA DIRECTORS · 업무 안내 포털</p>
       </div>
     </footer>
     <script src="./contact-link.js"></script>

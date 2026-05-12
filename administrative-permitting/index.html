@@ -11,12 +11,25 @@
     <link rel="stylesheet" href="./survey-styles.css" />
     <link rel="stylesheet" href="./landing.css" />
   </head>
-  <body>
+  <body class="page-landing">
     <div class="site-header-wrap">
       <div class="container container--header">
         <nav class="landing-nav" aria-label="섹션 이동">
-          <a class="landing-brand" href="../index.html">청사 디렉터스</a>
-          <div class="landing-nav-links">
+          <a class="landing-brand" href="../index.html">
+            <img
+              class="nav-logo"
+              src="https://bluedirectors.vercel.app/cs_logo.png"
+              alt=""
+              width="44"
+              height="44"
+              decoding="async"
+            />
+            <span>청사디렉터스</span>
+          </a>
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-controls="nav-panel-sub" />
+          <label for="nav-toggle" class="nav-burger">메뉴</label>
+          <div class="landing-nav-links" id="nav-panel-sub">
+            <a href="https://bluedirectors.vercel.app/" target="_blank" rel="noopener noreferrer">공식 홈</a>
             <a href="../index.html">업무 포털</a>
             <a href="#service">업무 안내</a>
             <a href="#cases">수임 사례</a>
@@ -27,25 +40,39 @@
         </nav>
 
         <header class="hero-portal section-anchor" id="top">
-          <p class="hero-kicker">주식회사 청사 디렉터스</p>
-          <div class="hero-brand-row">
-            <span class="hero-hash" aria-hidden="true">#</span>
-            <p class="hero-brand-en">CHUNG·SA DIRECTORS</p>
+          <div class="hero-layout">
+            <div class="hero-copy">
+              <p class="hero-kicker">주식회사 청사디렉터스</p>
+              <div class="hero-brand-row">
+                <span class="hero-hash" aria-hidden="true">#</span>
+                <p class="hero-brand-en">CHUNGSA DIRECTORS</p>
+              </div>
+              <h1 class="hero-tagline">인허가·행정기관 대응</h1>
+              <p class="lede">
+                허가·신고·변경·사후관리까지 행정 절차를 하나의 타임라인으로 묶습니다. 서류 체계와 현장 설명 포인트를 미리
+                정리해 반복 보완을 줄입니다.
+              </p>
+              <div class="hero-actions">
+                <a class="btn-hero-primary" data-main-contact href="#">프리미엄 상담 문의</a>
+                <a class="btn-hero-ghost" href="#service">업무 안내 보기</a>
+              </div>
+              <div class="hero-badges">
+                <span class="hero-badge">일정·체크리스트</span>
+                <span class="hero-badge">보완 대응</span>
+                <span class="hero-badge">현장·면담 동행</span>
+              </div>
+            </div>
+            <div class="hero-visual">
+              <img
+                class="hero-photo"
+                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=85"
+                alt="행정·인허가 업무"
+                width="1600"
+                height="1067"
+                decoding="async"
+              />
+            </div>
           </div>
-          <h1 class="hero-tagline">인허가·행정기관 대응</h1>
-        <p class="lede">
-          허가·신고·변경·사후관리까지 행정 절차를 하나의 타임라인으로 묶습니다. 서류 체계와 현장 설명 포인트를 미리
-          정리해 반복 보완을 줄입니다.
-        </p>
-        <div class="hero-actions">
-          <a class="btn-hero-primary" data-main-contact href="#">프리미엄 상담 문의</a>
-          <a class="btn-hero-ghost" href="#service">업무 안내 보기</a>
-        </div>
-        <div class="hero-badges">
-          <span class="hero-badge">일정·체크리스트</span>
-          <span class="hero-badge">보완 대응</span>
-          <span class="hero-badge">현장·면담 동행</span>
-        </div>
         </header>
       </div>
     </div>
@@ -60,7 +87,7 @@
         </p>
         <div class="question-group" style="margin-bottom: 0">
           <h3>주요 지원 범위</h3>
-          <ul class="tips" style="margin: 0.5rem 0 0; padding-left: 1.2rem; color: var(--muted); font-size: 0.9rem">
+          <ul class="tips" style="margin: 0.5rem 0 0; padding-left: 1.2rem; color: var(--muted)">
             <li>허가·신고·신고변경·폐업 등 행정 절차 로드맵 수립</li>
             <li>제출 서류 목록·작성 가이드·내부 검수</li>
             <li>행정기관 질의·보완 요청 대응 및 재제출 전략</li>
@@ -108,21 +135,54 @@
 
       <section class="card section-anchor" id="legal">
         <p class="section-eyebrow">Legal</p>
-        <h2 class="section-headline">법인 정보</h2>
-        <p class="section-lede">청사 디렉터스 메인 사이트와 동일한 표기 기준입니다. 실제 정보로 교체해 사용하세요.</p>
+        <h2 class="section-headline">법인·연락처 정보</h2>
+        <p class="section-lede">청사디렉터스 공식 홈페이지에 안내된 연락처·주소와 동일합니다.</p>
         <div class="legal-block">
-          <p><strong>상호</strong> 청사 디렉터스</p>
-          <p><strong>대표자</strong> 〔대표자명〕</p>
-          <p><strong>사업자등록번호</strong> 000-00-00000</p>
-          <p><strong>주소</strong> 〔본사 주소〕</p>
-          <p><strong>대표 전화</strong> 000-0000-0000</p>
+          <p><strong>상호</strong> 주식회사 청사디렉터스</p>
+          <p><strong>브랜드</strong> CHUNGSA DIRECTORS</p>
+          <p><strong>주소</strong> 서울특별시 중구 퇴계로 58, B01-1호 (필동)</p>
+          <p><strong>전화</strong> <a href="tel:1555-4561">1555-4561</a></p>
+          <p><strong>이메일</strong> <a href="mailto:csdir0414@naver.com">csdir0414@naver.com</a></p>
+          <p>
+            <strong>카카오톡</strong>
+            <a href="http://pf.kakao.com/_VrajX/chat" target="_blank" rel="noopener noreferrer">채널 바로가기</a>
+          </p>
         </div>
       </section>
 
     </main>
     <footer class="site-footer site-footer--dark">
       <div class="container container--footer">
-        <p>© 청사 디렉터스 · 인허가·행정기관 대응</p>
+        <div class="footer-grid">
+          <div class="footer-col footer-col--brand">
+            <img
+              class="footer-logo"
+              src="https://bluedirectors.vercel.app/cs_logo.png"
+              alt="CHUNGSA DIRECTORS"
+              width="180"
+              height="60"
+              decoding="async"
+            />
+            <p class="footer-company">주식회사 청사디렉터스</p>
+            <p class="footer-en">CHUNGSA DIRECTORS</p>
+          </div>
+          <div class="footer-col">
+            <p class="footer-heading">고객센터</p>
+            <p><a href="tel:1555-4561">1555-4561</a></p>
+            <p><a href="mailto:csdir0414@naver.com">csdir0414@naver.com</a></p>
+            <p>
+              <a href="http://pf.kakao.com/_VrajX/chat" target="_blank" rel="noopener noreferrer">카카오톡 채널</a>
+            </p>
+          </div>
+          <div class="footer-col">
+            <p class="footer-heading">오시는 길</p>
+            <p class="footer-address">서울특별시 중구 퇴계로 58, B01-1호 (필동)</p>
+            <p>
+              <a href="https://bluedirectors.vercel.app/" target="_blank" rel="noopener noreferrer">공식 홈페이지</a>
+            </p>
+          </div>
+        </div>
+        <p class="footer-copy">© 주식회사 청사디렉터스 · 인허가·행정기관 대응</p>
       </div>
     </footer>
     <script src="./contact-link.js"></script>

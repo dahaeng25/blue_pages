@@ -2,6 +2,7 @@
 
 :root {
   color-scheme: light;
+  --content-max: min(1180px, 94vw);
   --bg: #ebeef5;
   --surface: #ffffff;
   --text: #121826;
@@ -37,6 +38,15 @@ body {
 .container {
   width: min(1040px, 92vw);
   margin: 2rem auto 4rem;
+}
+
+body.page-landing .container {
+  width: var(--content-max);
+  max-width: 100%;
+}
+
+body.page-landing {
+  font-size: clamp(1rem, 2.1vw, 1.07rem);
 }
 
 .container.container--footer {
