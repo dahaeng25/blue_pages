@@ -1,0 +1,253 @@
+/* 청사 디렉터스 랜딩 — survey-styles.css 변수·톤 유지 */
+
+.landing-nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0.65rem 0;
+  margin: -0.5rem 0 1rem;
+  background: rgba(246, 248, 252, 0.94);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+
+.landing-brand {
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.landing-brand:hover {
+  color: var(--primary);
+}
+
+.landing-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  font-size: 0.88rem;
+}
+
+.landing-nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.landing-nav-links a:hover {
+  color: var(--primary);
+}
+
+.hero-landing {
+  padding: 0.25rem 0 0.5rem;
+}
+
+.hero-landing h1 {
+  font-size: clamp(1.45rem, 4vw, 1.85rem);
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+}
+
+.hero-landing .lede {
+  margin-top: 0.65rem;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--muted);
+  max-width: 52ch;
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 1rem;
+}
+
+.hero-badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: var(--primary-soft);
+  color: #2b3970;
+  border: 1px solid #d5e1ff;
+}
+
+.section-anchor {
+  scroll-margin-top: 4.5rem;
+}
+
+.section-title {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+}
+
+.section-lede {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.75rem;
+}
+
+.case-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.85rem;
+  background: #fbfcff;
+}
+
+.case-card h4 {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+}
+
+.case-card p {
+  margin: 0;
+  font-size: 0.86rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.case-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--primary);
+  margin-bottom: 0.4rem;
+}
+
+.cta-panel {
+  margin-top: 1rem;
+  padding: 1.15rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--primary-soft) 0%, #fff 55%);
+  border: 1px solid #d5e1ff;
+  text-align: center;
+}
+
+.cta-panel p {
+  margin: 0 0 0.85rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.cta-panel .cta-note {
+  margin: 0.65rem 0 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.btn-cta-lg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: min(100%, 420px);
+  padding: 0.95rem 1.25rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 10px 28px rgba(32, 87, 216, 0.28);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.btn-cta-lg:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 34px rgba(32, 87, 216, 0.35);
+}
+
+.legal-block {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.legal-block strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.85rem;
+}
+
+.hub-card {
+  display: block;
+  padding: 1rem;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 6px 20px rgba(30, 50, 110, 0.06);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.hub-card:hover {
+  border-color: #c9d6ff;
+  box-shadow: 0 10px 28px rgba(30, 50, 110, 0.1);
+}
+
+.hub-card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.02rem;
+  color: var(--text);
+}
+
+.hub-card p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.hub-card .hub-go {
+  margin-top: 0.65rem;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.site-footer {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .landing-nav {
+    position: static;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-anchor {
+    scroll-margin-top: 0.5rem;
+  }
+}
