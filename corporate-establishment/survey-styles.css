@@ -1,15 +1,22 @@
 :root {
   color-scheme: light;
-  --bg: #f6f8fc;
+  --bg: #f4f6fb;
   --surface: #ffffff;
-  --text: #1a1f36;
+  --text: #121826;
   --muted: #5a647d;
-  --primary: #2057d8;
-  --primary-soft: #eaf0ff;
-  --border: #dce2f0;
+  --primary: #1e4ed8;
+  --primary-soft: #e8eeff;
+  --border: #d5dceb;
   --good: #1f8b4c;
   --warn: #e38b1e;
   --bad: #c63636;
+  /* bluedirectors 메인 톤 — 딥 네이비 & 포인트 */
+  --navy-900: #0b1020;
+  --navy-800: #121a33;
+  --navy-700: #1a2544;
+  --accent-warm: #c9a962;
+  --hero-text: #f0f3fa;
+  --hero-muted: rgba(240, 243, 250, 0.72);
 }
 
 * {
