@@ -11,97 +11,170 @@
     <link rel="stylesheet" href="./survey-styles.css" />
     <link rel="stylesheet" href="./landing.css" />
   </head>
-  <body>
-    <main class="container">
-      <nav class="landing-nav" aria-label="상단 안내">
-        <a class="landing-brand" href="./index.html">청사 디렉터스</a>
-        <div class="landing-nav-links">
-          <a href="#intro">회사 소개</a>
-          <a href="#deliver">역량</a>
-          <a href="#cases">진행사례</a>
-          <a href="#services">업무 영역</a>
-          <a href="#legal">법인 정보</a>
-          <a class="nav-cta" data-main-contact href="#">프리미엄 상담 문의</a>
-        </div>
-      </nav>
+  <body class="page-landing">
+    <div class="site-header-wrap">
+      <div class="container container--header">
+        <nav class="landing-nav" aria-label="상단 안내">
+          <a class="landing-brand" href="./index.html">청사 디렉터스</a>
+          <div class="landing-nav-links">
+            <a href="#intro">회사 소개</a>
+            <a href="#deliver">역량</a>
+            <a href="#cases">진행사례</a>
+            <a href="#services">서비스 안내</a>
+            <a href="#portal">업무 포털</a>
+            <a href="#legal">법인 정보</a>
+            <a class="nav-cta" data-main-contact href="#">프리미엄 상담 문의</a>
+          </div>
+        </nav>
 
-      <header class="hero-portal section-anchor" id="top">
-        <p class="hero-kicker">주식회사 청사디렉터스</p>
-        <p class="hero-brand-en">CHUNG·SA DIRECTORS</p>
-        <h1>복잡한 행정·인허가를 <span class="hero-accent">명쾌하게</span> 풀어 드립니다.</h1>
-        <p class="lede">
-          설립부터 인허가, 식품·수입·안전 인증까지 실무 전 과정을 한 흐름으로 설계합니다. 아래에서 관심 업무를 고르시면
-          세부 안내 페이지로 이동합니다.
-        </p>
-        <div class="hero-actions">
-          <a class="btn-hero-primary" data-main-contact href="#">프리미엄 상담 문의</a>
-          <a class="btn-hero-ghost" href="#services">업무 영역 보기</a>
-        </div>
-        <div class="hero-badges">
-          <span class="hero-badge">행정·인허가 실무</span>
-          <span class="hero-badge">식품·제조 규제</span>
-          <span class="hero-badge">디지털·브랜드 연계</span>
-        </div>
-      </header>
+        <header class="hero-portal section-anchor" id="top">
+          <p class="hero-kicker">주식회사 청사 디렉터스</p>
+          <div class="hero-brand-row">
+            <span class="hero-hash" aria-hidden="true">#</span>
+            <p class="hero-brand-en">CHUNG·SA DIRECTORS</p>
+          </div>
+          <h1 class="hero-tagline hero-tagline--home">
+            복잡하고 어려운 행정·인허가를 <span class="hero-accent">명쾌하게</span> 풀어 드립니다.
+          </h1>
+          <p class="lede lede--hero">
+            인증, 인허가, 법인 설립, 디지털 구축까지 하나의 로드맵으로 연결합니다. 아래에서 관심 영역을 선택해 세부
+            안내로 이동할 수 있습니다.
+          </p>
+          <div class="hero-actions">
+            <a class="btn-hero-primary" data-main-contact href="#">프리미엄 상담 문의</a>
+            <a class="btn-hero-ghost" href="#portal">업무 포털 보기</a>
+          </div>
+        </header>
+      </div>
+    </div>
 
-      <section class="card section-anchor" id="intro">
-        <p class="section-eyebrow">Company introduction</p>
-        <h2 class="section-headline">전략은 정교하게,<br />실행은 명확하게.</h2>
-        <p class="section-lede wide">
+    <main class="container container--main">
+      <section class="card card--premium-dark section-anchor" id="intro">
+        <p class="section-eyebrow section-eyebrow--on-dark">Company introduction</p>
+        <h2 class="section-headline section-headline--on-dark">전략은 정교하게,<br />실행은 명확하게.</h2>
+        <p class="section-lede section-lede--on-dark wide">
           청사디렉터스는 인증, 인허가, 법인 설립, 디지털 구축을 하나의 로드맵으로 통합해 비즈니스의 불확실성을 줄이고
           성장 속도를 높입니다.
         </p>
+        <a class="btn-text-gold" href="https://bluedirectors.vercel.app/" rel="noopener noreferrer">회사소개 보기 →</a>
       </section>
 
-      <section class="card section-anchor" id="deliver">
-        <p class="section-eyebrow">What we deliver</p>
-        <h2 class="section-headline">기업의 과제를<br />결과로 연결합니다.</h2>
-        <p class="section-lede wide">
+      <section class="card card--premium-dark section-anchor" id="deliver">
+        <p class="section-eyebrow section-eyebrow--on-dark">What we deliver</p>
+        <h2 class="section-headline section-headline--on-dark section-headline--lg">
+          기업의 과제를<br />결과로 연결합니다.
+        </h2>
+        <p class="section-lede section-lede--on-dark wide">
           행정 절차의 정확성, 실행의 속도, 운영의 안정성까지 고려한 실무 중심 컨설팅으로 고객이 바로 체감할 수 있는
           성과를 만듭니다.
         </p>
       </section>
 
       <section class="card section-anchor" id="cases">
-        <p class="section-eyebrow">Cases</p>
+        <p class="section-eyebrow">진행사례</p>
         <h2 class="section-headline">실제 진행사례를 간단히 살펴보세요</h2>
         <p class="section-lede">실명·상호는 예시이며, 유사 규모·업종 경험을 바탕으로 안내합니다.</p>
         <div class="case-grid">
           <article class="case-card">
             <span class="case-date">2026.04</span>
             <span class="case-tag">식품·디지털</span>
-            <h4>즉석판매제조가공업 신고 + 온라인 채널</h4>
+            <h4>군산 여행 맛집 OO옥</h4>
             <p>
-              신고부터 스토어·상세페이지·로고·홈페이지를 통합 구축해 온라인 매출 흐름을 만들었습니다.
+              즉석판매제조가공업 신고부터 스토어·상세페이지·로고·홈페이지를 통합 구축해 온라인 매출 흐름을 만들었습니다.
             </p>
           </article>
           <article class="case-card">
             <span class="case-date">2026.03</span>
             <span class="case-tag">기업인증</span>
-            <h4>이노비즈 평가 대응</h4>
-            <p>평가 항목 보강과 인터뷰 대응으로 인증 통과 및 조달 가점 확보를 지원했습니다.</p>
+            <h4>○○테크 주식회사</h4>
+            <p>이노비즈 평가 항목 보강과 인터뷰 대응으로 인증 통과 및 조달 가점 확보를 지원했습니다.</p>
           </article>
           <article class="case-card">
             <span class="case-date">2026.02</span>
             <span class="case-tag">HACCP</span>
-            <h4>제조 현장 식품안전 체계</h4>
+            <h4>○○베이커리</h4>
             <p>HACCP 자율 인증 체계를 설계해 1차 심사 통과와 대형 납품 계약으로 연결했습니다.</p>
           </article>
           <article class="case-card">
             <span class="case-date">2026.01</span>
             <span class="case-tag">법인·조직</span>
-            <h4>사회적협동조합 설립</h4>
-            <p>인가 절차를 단계별로 정리해 설립과 후속 사업 연계를 지원했습니다.</p>
+            <h4>○○○○사회적협동조합</h4>
+            <p>사회적협동조합 인가 절차를 단계별로 정리해 설립과 후속 사업 연계를 지원했습니다.</p>
           </article>
         </div>
       </section>
 
+      <section class="card section-anchor" id="featured-cases">
+        <p class="section-eyebrow">진행사례</p>
+        <h2 class="section-headline">대표 사례</h2>
+        <div class="featured-case-list">
+          <article class="featured-case">
+            <span class="featured-case-meta">식품제조 인허가 · 브랜드·디지털</span>
+            <h3>군산 여행 맛집 OO옥 즉석판매제조가공업 + 디지털 전환</h3>
+            <p>
+              즉석판매제조가공업 신고부터 스토어·상세페이지·로고·홈페이지까지 통합 구축해 온라인 매출을 크게 높였습니다.
+            </p>
+          </article>
+          <article class="featured-case">
+            <span class="featured-case-meta">브랜드·디지털</span>
+            <h3>신규 개원 한의원의 검색광고 셋팅</h3>
+            <p>키워드 구조 재설계로 초기 광고 효율과 문의 전환을 빠르게 개선했습니다.</p>
+          </article>
+          <article class="featured-case">
+            <span class="featured-case-meta">기업인증</span>
+            <h3>간편식 제조 스타트업의 벤처기업인증 취득</h3>
+            <p>혁신성장유형으로 진단해 벤처기업확인서 발급과 정책자금 우대 승인까지 연계했습니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <div class="inquiry-strip" aria-label="문의 안내">
+        <div class="inquiry-strip-head">
+          <span class="inquiry-strip-title">실시간 문의내용</span>
+          <a class="inquiry-strip-link" data-main-contact href="#">문의하기 바로가기 →</a>
+        </div>
+        <ul class="inquiry-strip-list">
+          <li><span class="inquiry-date">2026.05.10</span> [메인비즈] 출장상담 가능한가요?</li>
+          <li><span class="inquiry-date">2026.05.07</span> [친환경인증] 빠른 일정 가능할지 확인 부탁드립니다.</li>
+          <li><span class="inquiry-date">2026.05.04</span> [즉석판매제조가공업] 비용과 기간 안내 부탁드립니다.</li>
+          <li><span class="inquiry-date">2026.05.01</span> [공익법인 추천신청] 서류 준비가 안 된 상태인데도 진행 가능할까요?</li>
+          <li><span class="inquiry-date">2026.04.28</span> [상세페이지 작성] 빠른 회신 부탁드립니다.</li>
+        </ul>
+      </div>
+
       <section class="card section-anchor" id="services">
-        <p class="section-eyebrow">Services</p>
+        <p class="section-eyebrow">서비스안내</p>
         <h2 class="section-headline">수행하는 서비스를 한눈에 확인하세요</h2>
+        <div class="service-pillars">
+          <article class="service-pillar">
+            <h3>기업 인허가 및 행정 대행</h3>
+            <p>공장 설립, 각종 영업 인허가, 법인 설립 등 복잡한 행정 절차를 오차 없이 신속하게 처리합니다.</p>
+          </article>
+          <article class="service-pillar">
+            <h3>경영 및 밸류업 컨설팅</h3>
+            <p>초기 스타트업부터 중소기업까지, 재무·노무 행정 리스크를 진단하고 맞춤형 성장 전략을 제시합니다.</p>
+          </article>
+          <article class="service-pillar">
+            <h3>프로그래밍 및 IT 솔루션</h3>
+            <p>업무 자동화 프로그램, 사내 인트라넷, 맞춤형 웹·앱 서비스 등 최적의 IT 환경을 구축합니다.</p>
+          </article>
+          <article class="service-pillar">
+            <h3>마케팅 기획 및 미디어 창작</h3>
+            <p>브랜드의 가치를 높이는 미디어 콘텐츠 창작과 효율적인 타겟 마케팅 전략을 실행합니다.</p>
+          </article>
+        </div>
+        <p class="section-lede section-lede--tight">
+          <a class="link-inline" href="https://bluedirectors.vercel.app/" rel="noopener noreferrer">서비스안내 보기</a>
+          는 메인 홈에서 확인하실 수 있습니다.
+        </p>
+      </section>
+
+      <section class="card section-anchor" id="portal">
+        <p class="section-eyebrow">업무 포털</p>
+        <h2 class="section-headline">분야별 안내 페이지</h2>
         <p class="section-lede">
-          각 페이지는 호스팅 시 해당 폴더를 루트로 두기 쉽게 구분되어 있습니다. 세부 설명·문의는 각 페이지 하단에서
-          메인 상담으로 연결됩니다.
+          호스팅 시 폴더를 루트로 두기 쉽게 구분되어 있습니다. 세부 설명·문의는 각 페이지 하단에서 메인 상담으로
+          연결됩니다.
         </p>
         <div class="hub-grid">
           <a class="hub-card" href="./corporate-establishment/index.html">
@@ -132,6 +205,16 @@
         </div>
       </section>
 
+      <section class="card card--cta-bottom section-anchor" id="contact-cta">
+        <h2 class="section-headline section-headline--center">성공적인 비즈니스를 위한 첫걸음</h2>
+        <p class="section-lede section-lede--center wide">
+          편하게 작성해 주세요. 현재 상황과 원하시는 방향을 남겨주시면, 이해하기 쉬운 방식으로 빠르게 안내드리겠습니다.
+        </p>
+        <div class="hero-actions hero-actions--center">
+          <a class="btn-cta-main" data-main-contact href="#">프리미엄 상담 문의</a>
+        </div>
+      </section>
+
       <section class="card section-anchor" id="legal">
         <p class="section-eyebrow">Legal</p>
         <h2 class="section-headline">법인 정보</h2>
@@ -144,9 +227,13 @@
           <p><strong>대표 전화</strong> 000-0000-0000</p>
         </div>
       </section>
-
-      <p class="site-footer">© 청사 디렉터스 · 업무 안내 포털</p>
     </main>
+
+    <footer class="site-footer site-footer--dark">
+      <div class="container container--footer">
+        <p>© 청사 디렉터스 · 업무 안내 포털</p>
+      </div>
+    </footer>
     <script src="./contact-link.js"></script>
   </body>
 </html>

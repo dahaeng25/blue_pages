@@ -12,23 +12,27 @@
     <link rel="stylesheet" href="./landing.css" />
   </head>
   <body>
-    <main class="container">
-      <nav class="landing-nav" aria-label="섹션 이동">
-        <a class="landing-brand" href="../index.html">청사 디렉터스</a>
-        <div class="landing-nav-links">
-          <a href="../index.html">업무 포털</a>
-          <a href="#service">업무 안내</a>
-          <a href="#cases">수임 사례</a>
-          <a href="#contact">문의</a>
-          <a href="#legal">법인 정보</a>
-          <a class="nav-cta" data-main-contact href="#">프리미엄 상담 문의</a>
-        </div>
-      </nav>
+    <div class="site-header-wrap">
+      <div class="container container--header">
+        <nav class="landing-nav" aria-label="섹션 이동">
+          <a class="landing-brand" href="../index.html">청사 디렉터스</a>
+          <div class="landing-nav-links">
+            <a href="../index.html">업무 포털</a>
+            <a href="#service">업무 안내</a>
+            <a href="#cases">수임 사례</a>
+            <a href="#contact">문의</a>
+            <a href="#legal">법인 정보</a>
+            <a class="nav-cta" data-main-contact href="#">프리미엄 상담 문의</a>
+          </div>
+        </nav>
 
-      <header class="hero-portal section-anchor" id="top">
-        <p class="hero-kicker">주식회사 청사디렉터스</p>
-        <p class="hero-brand-en">CHUNG·SA DIRECTORS</p>
-        <h1>수입식품 통관·신고·검역</h1>
+        <header class="hero-portal section-anchor" id="top">
+          <p class="hero-kicker">주식회사 청사 디렉터스</p>
+          <div class="hero-brand-row">
+            <span class="hero-hash" aria-hidden="true">#</span>
+            <p class="hero-brand-en">CHUNG·SA DIRECTORS</p>
+          </div>
+          <h1 class="hero-tagline">수입식품 통관·신고·검역</h1>
         <p class="lede">
           HS·품목 분류, 신고 필증, 검사·검역, 라벨·표시까지 수입 전 과정을 연결합니다. 반복 통관을 전제로 표준
           패키지를 만들어 리드 타임을 줄입니다.
@@ -42,8 +46,11 @@
           <span class="hero-badge">검사·검역</span>
           <span class="hero-badge">라벨·이력</span>
         </div>
-      </header>
+        </header>
+      </div>
+    </div>
 
+    <main class="container container--main">
       <section class="card section-anchor" id="service">
         <p class="section-eyebrow">Service</p>
         <h2 class="section-headline">업무 설명</h2>
@@ -111,8 +118,12 @@
         </div>
       </section>
 
-      <p class="site-footer">© 청사 디렉터스 · 수입식품 통관·신고·검역</p>
     </main>
+    <footer class="site-footer site-footer--dark">
+      <div class="container container--footer">
+        <p>© 청사 디렉터스 · 수입식품 통관·신고·검역</p>
+      </div>
+    </footer>
     <script src="./contact-link.js"></script>
   </body>
 </html>

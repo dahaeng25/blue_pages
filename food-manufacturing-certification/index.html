@@ -12,23 +12,27 @@
     <link rel="stylesheet" href="./landing.css" />
   </head>
   <body>
-    <main class="container">
-      <nav class="landing-nav" aria-label="섹션 이동">
-        <a class="landing-brand" href="../index.html">청사 디렉터스</a>
-        <div class="landing-nav-links">
-          <a href="../index.html">업무 포털</a>
-          <a href="#service">업무 안내</a>
-          <a href="#cases">수임 사례</a>
-          <a href="#contact">문의</a>
-          <a href="#legal">법인 정보</a>
-          <a class="nav-cta" data-main-contact href="#">프리미엄 상담 문의</a>
-        </div>
-      </nav>
+    <div class="site-header-wrap">
+      <div class="container container--header">
+        <nav class="landing-nav" aria-label="섹션 이동">
+          <a class="landing-brand" href="../index.html">청사 디렉터스</a>
+          <div class="landing-nav-links">
+            <a href="../index.html">업무 포털</a>
+            <a href="#service">업무 안내</a>
+            <a href="#cases">수임 사례</a>
+            <a href="#contact">문의</a>
+            <a href="#legal">법인 정보</a>
+            <a class="nav-cta" data-main-contact href="#">프리미엄 상담 문의</a>
+          </div>
+        </nav>
 
-      <header class="hero-portal section-anchor" id="top">
-        <p class="hero-kicker">주식회사 청사디렉터스</p>
-        <p class="hero-brand-en">CHUNG·SA DIRECTORS</p>
-        <h1>식품제조·품목제조업 인허가</h1>
+        <header class="hero-portal section-anchor" id="top">
+          <p class="hero-kicker">주식회사 청사 디렉터스</p>
+          <div class="hero-brand-row">
+            <span class="hero-hash" aria-hidden="true">#</span>
+            <p class="hero-brand-en">CHUNG·SA DIRECTORS</p>
+          </div>
+          <h1 class="hero-tagline">식품제조·품목제조업 인허가</h1>
         <p class="lede">
           시설 면적·공정 동선·설비 배치가 규제와 맞물립니다. 도면·공정 설명·위생 관리 계획을 한 세트로 준비해 심사
           단계에서의 설명 비용을 줄입니다.
@@ -42,8 +46,11 @@
           <span class="hero-badge">허가 서류 패키지</span>
           <span class="hero-badge">심사·지적 대응</span>
         </div>
-      </header>
+        </header>
+      </div>
+    </div>
 
+    <main class="container container--main">
       <section class="card section-anchor" id="service">
         <p class="section-eyebrow">Service</p>
         <h2 class="section-headline">업무 설명</h2>
@@ -112,8 +119,12 @@
         </div>
       </section>
 
-      <p class="site-footer">© 청사 디렉터스 · 식품제조·품목제조업 인허가</p>
     </main>
+    <footer class="site-footer site-footer--dark">
+      <div class="container container--footer">
+        <p>© 청사 디렉터스 · 식품제조·품목제조업 인허가</p>
+      </div>
+    </footer>
     <script src="./contact-link.js"></script>
   </body>
 </html>

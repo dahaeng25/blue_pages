@@ -2,7 +2,7 @@
 
 :root {
   color-scheme: light;
-  --bg: #f4f6fb;
+  --bg: #ebeef5;
   --surface: #ffffff;
   --text: #121826;
   --muted: #5a647d;
@@ -37,6 +37,10 @@ body {
 .container {
   width: min(1040px, 92vw);
   margin: 2rem auto 4rem;
+}
+
+.container.container--footer {
+  margin: 0 auto;
 }
 
 .hero h1 {
