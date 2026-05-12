@@ -99,6 +99,7 @@
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #fff;
+  font-feature-settings: "ss01" on;
 }
 
 .hero-brand-en::after {
@@ -293,7 +294,9 @@
 
 .section-title {
   margin: 0 0 0.35rem;
-  font-size: 1.05rem;
+  font-size: clamp(1.02rem, 2.4vw, 1.12rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
 .section-lede {
@@ -318,7 +321,9 @@
 
 .case-card h4 {
   margin: 0 0 0.35rem;
-  font-size: 0.95rem;
+  font-size: 0.98rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
 .case-card p {
@@ -394,14 +399,35 @@
 }
 
 .legal-block {
-  font-size: 0.82rem;
+  font-size: 0.86rem;
   color: var(--muted);
-  line-height: 1.65;
+  line-height: 1.7;
+  padding: 1.05rem 1.15rem;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #f8faff 0%, #fff 100%);
+  border: 1px solid var(--border);
+}
+
+.legal-block p {
+  margin: 0.35rem 0;
+}
+
+.legal-block p:first-child {
+  margin-top: 0;
+}
+
+.legal-block p:last-child {
+  margin-bottom: 0;
 }
 
 .legal-block strong {
   color: var(--text);
   font-weight: 700;
+}
+
+main.container .card .question-group {
+  background: linear-gradient(180deg, #f9fbff 0%, #fff 100%);
+  border-color: #e2e8f4;
 }
 
 .hub-grid {
@@ -429,7 +455,9 @@
 
 .hub-card h3 {
   margin: 0 0 0.35rem;
-  font-size: 1.02rem;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
   color: var(--text);
 }
 
